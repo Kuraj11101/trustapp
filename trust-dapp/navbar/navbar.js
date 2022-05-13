@@ -46,7 +46,7 @@ export default function Navbar(){
    </Link>
    <Link href="/auth/register">
           <a  style={{marginRight:"30px"}}>
-  <button class="btn btn-outline-primary" type="button">Register</button>
+  <button className="btn btn-outline-primary" type="button">Register</button>
   {/* <button class="btn btn-primary me-md-2" type="button">Login </button> */}
           </a>
    </Link>
