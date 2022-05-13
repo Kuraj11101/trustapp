@@ -4,6 +4,7 @@ import Head from "next/head";
 import { useEffect, useRef, useState } from "react";
 import Web3Modal from "web3modal";
 import Button from 'react-bootstrap/Button';
+import Script from 'next/script';
 // import {
 //   CRYPTODEVS_DAO_ABI,
 //   CRYPTODEVS_DAO_CONTRACT_ADDRESS,
