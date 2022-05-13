@@ -15,8 +15,7 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
 
-<Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossOrigin="anonymous"></Script>
-<Script src="https://unpkg.com/react/umd/react.production.min.js" crossOrigin></Script>
+
   // ETH Balance of the DAO contract
   const [treasuryBalance, setTreasuryBalance] = useState("0");
   // Number of proposals created in the DAO
@@ -348,6 +347,8 @@ export default function Home() {
   return (
 
     <div>
+        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossOrigin="anonymous"></Script>
+        <Script src="https://unpkg.com/react/umd/react.production.min.js" crossOrigin></Script>
       <Head>
         <title>Trust</title>
         <meta name="description" content="Trust dApp" />
