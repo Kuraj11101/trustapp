@@ -33,9 +33,9 @@ export default function Navbar(){
           <a className="nav-link disabled">Borrow</a>
         </li>
       </ul>
-      {/* <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-        <button class="btn btn-outline-success" type="submit">Search</button>
+      {/* <form className="d-flex">
+        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <button className="btn btn-outline-success" type="submit">Search</button>
       </form> */}
       <div className="d-grid gap-2 d-md-flex justify-content-md-end">
 
@@ -47,7 +47,7 @@ export default function Navbar(){
    <Link href="/auth/register">
           <a  style={{marginRight:"30px"}}>
   <button className="btn btn-outline-primary" type="button">Register</button>
-  {/* <button class="btn btn-primary me-md-2" type="button">Login </button> */}
+  {/* <button className="btn btn-primary me-md-2" type="button">Login </button> */}
           </a>
    </Link>
 </div>
