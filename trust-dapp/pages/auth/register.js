@@ -1,5 +1,5 @@
-import { BaseAuthLayout } from "../../components/Auth/Base";
-import { RegisterForm } from "../../components/Auth/Register";
+import { BaseAuthLayout } from "../../components/auth/base";
+import { RegisterForm } from "../../components/auth/register";
 import Link from "next/link";
 
 const styles = {
