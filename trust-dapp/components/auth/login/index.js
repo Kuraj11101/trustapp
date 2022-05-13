@@ -46,12 +46,12 @@ export function LoginForm() {
 
   return (
 
-    <div class="card text-dark bg-light mb-3" style={{maxWidth:"500px", marginTop: "20px"}}>
-        <div class="card-header">Login</div>
-        <div class="card-body">
+    <div className="card text-dark bg-light mb-3" style={{maxWidth:"500px", marginTop: "20px"}}>
+        <div className="card-header">Login</div>
+        <div className="card-body">
             {/* <h5 class="card-title">Success card title</h5>
              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> */}
-             <form class="col-sm-6 justify-content-center" onSubmit={handleSubmit}>
+             <form className="col-sm-6 justify-content-center" onSubmit={handleSubmit}>
       <fieldset>
         <legend className="h1"></legend>
         <div className="mb-3">

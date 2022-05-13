@@ -4,6 +4,7 @@ import Head from "next/head";
 import { useEffect, useRef, useState } from "react";
 import Web3Modal from "web3modal";
 import Button from 'react-bootstrap/Button';
+import Script from 'next/script'
 // import {
 //   CRYPTODEVS_DAO_ABI,
 //   CRYPTODEVS_DAO_CONTRACT_ADDRESS,
@@ -236,7 +237,7 @@ export default function Home() {
     }
   }, [selectedTab]);
 
-  // Render the contents of the appropriate tab based on `selectedTab`
+  // // Render the contents of the appropriate tab based on `selectedTab`
   function renderTabs() {
     if (selectedTab === "Create Proposal") {
       return renderCreateProposalTab();
