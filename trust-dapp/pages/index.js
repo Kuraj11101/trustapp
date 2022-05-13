@@ -4,7 +4,7 @@ import Head from "next/head";
 import { useEffect, useRef, useState } from "react";
 import Web3Modal from "web3modal";
 import Button from 'react-bootstrap/Button';
-import Script from 'next/script'
+import Script from 'next/script';
 // import {
 //   CRYPTODEVS_DAO_ABI,
 //   CRYPTODEVS_DAO_CONTRACT_ADDRESS,
@@ -14,6 +14,8 @@ import Script from 'next/script'
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
+
+
   // ETH Balance of the DAO contract
   const [treasuryBalance, setTreasuryBalance] = useState("0");
   // Number of proposals created in the DAO
@@ -345,15 +347,13 @@ export default function Home() {
   return (
 
     <div>
+        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossOrigin="anonymous"></Script>
+        <Script src="https://unpkg.com/react/umd/react.production.min.js" crossOrigin></Script>
       <Head>
         <title>Trust</title>
         <meta name="description" content="Trust dApp" />
         <link rel="icon" href="/favicon.ico" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossOrigin="anonymous" />
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossOrigin="anonymous"></script>
-        <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
-
-
       </Head>
 
       <div className={styles.main}>
