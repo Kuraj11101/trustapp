@@ -6,8 +6,8 @@ import Web3Modal from "web3modal";
 import Button from 'react-bootstrap/Button';
 import Script from 'next/script';
 import {useRouter} from "next/router";
-import {signIn} from "next-auth/react";
-import { signOut } from 'next-auth/client';
+import {signIn, signOut} from "next-auth/react";
+//import {  } from 'next-auth/client';
 import { useSession } from "next-auth/react";
 // import {
 //   CRYPTODEVS_DAO_ABI,
