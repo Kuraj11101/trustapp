@@ -22,8 +22,9 @@ function createUser({ email, username, password }) {
 
     try {
         const result = excuteQuery({
-            query: 'INSERT INTO users (id, createdAt, email, username hash, salt) VALUES(?, ?, ?, ?, ?)',
-            values: [user.id, user.createdAt.toString(), user.email, user.username, user.hash, user.salt],
+            query: 'INSERT INTO users (id, email, username hash, salt) VALUES(?, ?, ?, ?, ?)',
+            values: [user.id, user.email, user.username, user.hash, user.salt],
+//user.createdAt.toString(), 
         });
         console.log( result );
     } catch ( error ) {
