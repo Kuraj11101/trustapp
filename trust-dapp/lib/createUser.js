@@ -1,7 +1,7 @@
 import crypto from 'crypto';
 import { v4 as uuidv4 } from 'uuid';
 import excuteQuery from './db';
-import moment from 'moment';
+//import moment from 'moment';
 
 export default createUser;
 
@@ -13,7 +13,7 @@ function createUser({ email, username, password }) {
         .toString('hex');
     const user = {
         id: uuidv4(),
-        createdAt: moment().format('YYYY-MM-DD HH:mm:ss'),
+      //  createdAt: moment().format('YYYY-MM-DD HH:mm:ss'),
         email,
         username,
         hash,
@@ -22,7 +22,7 @@ function createUser({ email, username, password }) {
 
     try {
         const result = excuteQuery({
-            query: 'INSERT INTO users (id, createdAt, email, username hash, salt) VALUES(?, ?, ?, ?, ?, ?)',
+            query: 'INSERT INTO users (id, createdAt, email, username hash, salt) VALUES(?, ?, ?, ?, ?)',
             values: [user.id, user.createdAt.toString(), user.email, user.username, user.hash, user.salt],
         });
         console.log( result );
