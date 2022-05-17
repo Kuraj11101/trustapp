@@ -20,7 +20,7 @@ export async function getServerSideProps(context) {
   return {
     props: { providers },
   }
-  console.log();
+  console.log(providers);
 }
 
 // const SignIn = () => {
