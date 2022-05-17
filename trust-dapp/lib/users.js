@@ -11,10 +11,10 @@ const salt = bcrypt.genSaltSync(saltRounds);
 // Users list
 let users = [
   {
-    id: 0,
-    username: "makan",
-    email: "makan@google.com",
-    password: "$2b$10$Sl8BsmAmJAKUCKlG2FlwZOgbiCGMkEkpgjEfc/FDdFMcq6RFaZjw2",
+    id: '',
+    username: "",
+    email: "",
+    password: "",
   },
 ];
 // ----------------------------------------------------*

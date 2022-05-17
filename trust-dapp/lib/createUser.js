@@ -1,16 +1,19 @@
 import crypto from 'crypto';
 import { v4 as uuidv4 } from 'uuid';
-import excuteQuery from '././helpers/lib/db';
+import excuteQuery from './db';
 import moment from 'moment';
 
-export async function createUser({ email, password }) {
+export default createUser;
+
+
+function createUser({ email, username, password }) {
     const salt = crypto.randomBytes(16).toString('hex');
     const hash = crypto
         .pbkdf2Sync(password, salt, 1000, 64, 'sha512')
         .toString('hex');
     const user = {
         id: uuidv4(),
-        createdAt: moment().format( 'YYYY-MM-DD HH:mm:ss'),
+        createdAt: moment().format('YYYY-MM-DD HH:mm:ss'),
         email,
         username,
         hash,
@@ -18,7 +21,7 @@ export async function createUser({ email, password }) {
     };
 
     try {
-        const result = await excuteQuery({
+        const result = excuteQuery({
             query: 'INSERT INTO users (id, createdAt, email, username hash, salt) VALUES(?, ?, ?, ?, ?, ?)',
             values: [user.id, user.createdAt.toString(), user.email, user.username, user.hash, user.salt],
         });

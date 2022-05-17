@@ -1,20 +1,19 @@
 import { useState } from "react";
-import { createUser } from "../../../helpers/";
+import { createUser } from "../../../lib/createUser";
 import Router from "next/router";
 
 export function RegisterForm() {
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
-  const [hash, setHash] = useState("");
+  const [password, setPassword] = useState("");
 
-  async function handleSubmit(e) {
+  function handleSubmit(e) {
     e.preventDefault();
     try {
-      const data = await createUser({
+      const data = createUser({
         email,
         username,
-        hash,
-        salt,
+        password
       });
       // console.log(data);
 
@@ -63,7 +62,7 @@ export function RegisterForm() {
             id="passwordInput"
             className="form-control"
             placeholder="Password"
-            onChange={(e) => setHash(e.target.value)}
+            onChange={(e) => setPassword(e.target.value)}
           />
         </div>
         <button type="submit" className="btn btn-primary">

@@ -28,7 +28,7 @@ export default function Dashboard() {
   }, []);
 
   function redirectToLogin() {
-    Router.push("/auth/login");
+    Router.push("/api/auth/signin");
   }
 
   function handleLogout(e) {

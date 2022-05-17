@@ -1,6 +1,32 @@
 import Link from "next/link";
+import { useRouter } from 'next/router'
+import { useSession, signIn,signOut } from "next-auth/react";
+//import {useRouter} from "next/router";
+
+//const router = useRouter();
+
+
 
 export default function Navbar(){
+
+  // const { data: session } = useSession();
+  // if (session) {
+  //   return (
+  //      <> Signed in as {session.user.email} <br />
+  //      <button onClick={() => signOut()}>Sign out</button>
+  //      </>
+  //     )
+  // }
+
+  // const handleSignin = (e) => {
+  //   e.preventDefault()
+  //   signOut()
+  // }
+
+  // const handleSignout = (e) => {
+  //   e.preventDefault()
+  //   signOut()
+  // }
     return(
       //  <div className="navbar1">
       //      <div className="navbar4">
@@ -39,17 +65,24 @@ export default function Navbar(){
       </form> */}
       <div className="d-grid gap-2 d-md-flex justify-content-md-end">
 
-   <Link href="/auth/login">
+   <Link href="/api/auth/signin">
           <a  style={{marginRight:"30px"}}>
-          <button className="btn btn-primary me-md-2" type="button">Login </button>
+          <button className="btn btn-primary me-md-2" type="button">Login</button>
           </a>
    </Link>
-   <Link href="/auth/register">
-          <a  style={{marginRight:"30px"}}>
-  <button className="btn btn-outline-primary" type="button">Register</button>
+   {/* <Link href="/register">
+   <a  style={{marginRight:"30px"}}> */}
+  <button className="btn btn-outline-primary" type="button" onClick={() => signIn()}>Register</button>
   {/* <button className="btn btn-primary me-md-2" type="button">Login </button> */}
-          </a>
-   </Link>
+          {/* </a>
+   </Link> */}
+
+ {/* {!session && */}
+   {/* <a  style={{marginRight:"30px"}}> */}
+  {/* <button className="btn btn-outline-primary" onClick={handleSignout} >Logout</button> */}
+  {/* <button className="btn btn-primary me-md-2" type="button">Login </button> */}
+          {/* </a> */}
+          {/* } */}
 </div>
     </div>
   </div>

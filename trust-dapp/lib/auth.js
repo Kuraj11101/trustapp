@@ -19,7 +19,7 @@ export const registerUser = async (payload) => {
 };
 // ------------------------------------------------------------*
 export const whoAmI = async () => {
-  const res = await fetch("/api/profile", {
+  const res = await fetch("/api/dashboard", {
     headers: {
       authorization: getToken(),
     },
