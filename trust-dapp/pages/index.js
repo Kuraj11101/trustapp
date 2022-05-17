@@ -7,6 +7,7 @@ import Button from 'react-bootstrap/Button';
 import Script from 'next/script';
 import {useRouter} from "next/router";
 import {signIn} from "next-auth/react";
+import { signIn, signOut, useSession } from 'next-auth/client';
 import { useSession } from "next-auth/react";
 // import {
 //   CRYPTODEVS_DAO_ABI,
@@ -18,6 +19,11 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
 
+  const [session, loading] = useSession();
+
+  React.useEffect(() => {
+    console.log(session); // This returns an undefined value
+  }, [session]);
 
   const { data: session, status } = useSession();
   //const loading = status == "loading"
