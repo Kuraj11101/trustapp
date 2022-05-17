@@ -70,12 +70,12 @@ export default function Navbar(){
           <button className="btn btn-primary me-md-2" type="button">Login</button>
           </a>
    </Link>
-   {/* <Link href="/register">
-   <a  style={{marginRight:"30px"}}> */}
-  <button className="btn btn-outline-primary" type="button" onClick={() => signIn()}>Register</button>
+    <Link href="/register">
+   <a  style={{marginRight:"30px"}}> 
+  <button className="btn btn-outline-primary" type="button">Register</button>
   {/* <button className="btn btn-primary me-md-2" type="button">Login </button> */}
-          {/* </a>
-   </Link> */}
+           </a>
+   </Link> 
 
  {/* {!session && */}
    {/* <a  style={{marginRight:"30px"}}> */}
