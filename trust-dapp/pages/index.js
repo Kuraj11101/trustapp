@@ -19,13 +19,13 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
 
-  const [session] = useSession();
+  //const [session] = useSession();
 
-  React.useEffect(() => {
-    console.log(session); // This returns an undefined value
-  }, [session]);
+ // React.useEffect(() => {
+ //   console.log(session); // This returns an undefined value
+//  }, [session]);
 
-// const { data: session, status } = useSession();
+   const { data: session, status } = useSession();
  //const loading = status == "loading"
   const router = useRouter();
   // ETH Balance of the DAO contract
