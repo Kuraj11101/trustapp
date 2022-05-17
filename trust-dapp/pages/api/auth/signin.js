@@ -1,5 +1,5 @@
 import { getProviders, signIn } from "next-auth/react"
-import React, { useEffect, useState } from "react";
+//import React, { useEffect, useState } from "react";
 
 export default function SignIn({ providers }) {
   console.log(providers);
@@ -23,7 +23,7 @@ export async function getServerSideProps(context) {
   }
 }
 
-// const SignIn = () => {
+/// const SignIn = () => {
 //   const [providers, setProviders] = useState('');
 
 //   useEffect(() => {
