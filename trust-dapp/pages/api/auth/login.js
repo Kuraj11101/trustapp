@@ -1,4 +1,4 @@
-import { BaseAuthLayout } from "../././components/auth/base";
+import { BaseAuthLayout } from ".././././components/auth/base";
 import { LoginForm } from "../../../components/auth/login";
 import Link from "next/link";
 
