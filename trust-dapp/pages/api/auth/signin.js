@@ -17,10 +17,10 @@ export default function SignIn({ providers }) {
 
 export async function getServerSideProps(context) {
   const providers = await getProviders()
+  console.log(providers);
   return {
     props: { providers },
   }
-  console.log(providers);
 }
 
 // const SignIn = () => {
