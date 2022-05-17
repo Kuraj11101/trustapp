@@ -2,6 +2,7 @@ import { getProviders, signIn } from "next-auth/react"
 import React, { useEffect, useState } from "react";
 
 export default function SignIn({ providers }) {
+  console.log(providers);
   return (
     <>
       {Object.values(providers).map((provider) => (
@@ -17,7 +18,6 @@ export default function SignIn({ providers }) {
 
 export async function getServerSideProps(context) {
   const providers = await getProviders()
-  console.log(providers);
   return {
     props: { providers },
   }
