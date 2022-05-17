@@ -26,7 +26,7 @@ export default function Home() {
   }, [session]);
 
 // const { data: session, status } = useSession();
-  //const loading = status == "loading"
+ //const loading = status == "loading"
   const router = useRouter();
   // ETH Balance of the DAO contract
   const [treasuryBalance, setTreasuryBalance] = useState("0");
