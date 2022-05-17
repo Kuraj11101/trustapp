@@ -1,4 +1,5 @@
 import { getProviders, signIn } from "next-auth/react"
+//import { signIn, signOut, useSession } from 'next-auth/client';
 //import React, { useEffect, useState } from "react";
 
 export default function SignIn({ providers }) {
