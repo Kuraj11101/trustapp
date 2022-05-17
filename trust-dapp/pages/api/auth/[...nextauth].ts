@@ -37,7 +37,8 @@ const options = {
             clientId: process.env.Google_ID,
             clientSecret: process.env.Google_SECRET,
         }),
-
+         
+       secret: process.env.NEXTAUTH_SECRET,
         // CredentialsProvider({
 
           //  id: "credentials",
