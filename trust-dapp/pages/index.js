@@ -25,7 +25,7 @@ export default function Home() {
     console.log(session); // This returns an undefined value
   }, [session]);
 
-  const { data: session, status } = useSession();
+// const { data: session, status } = useSession();
   //const loading = status == "loading"
   const router = useRouter();
   // ETH Balance of the DAO contract
