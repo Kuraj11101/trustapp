@@ -65,7 +65,7 @@ export default function Navbar(){
       </form> */}
       <div className="d-grid gap-2 d-md-flex justify-content-md-end">
 
-   <Link href="/api/auth/signin">
+   <Link href="/api/auth/providers">
           <a  style={{marginRight:"30px"}}>
           <button className="btn btn-primary me-md-2" type="button">Login</button>
           </a>
