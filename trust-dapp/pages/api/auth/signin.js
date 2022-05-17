@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 export default function SignIn({ providers }) {
   return (
     <>
-      {Object.key(providers).map((provider) => (
+      { providers && providers.length && Object.key(providers).map((provider) => (
         <div key={provider.name}>
           <button onClick={() => signIn(provider.id)}>
             Sign in with {provider.Credentials}
