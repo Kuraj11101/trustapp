@@ -19,7 +19,7 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
 
-  const [session, loading] = useSession();
+  const [session] = useSession();
 
   React.useEffect(() => {
     console.log(session); // This returns an undefined value
